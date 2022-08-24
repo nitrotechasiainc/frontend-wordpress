@@ -1,0 +1,222 @@
+.section-concept {
+
+  &:first-child {
+    padding-top: 216px;
+  }
+
+  background-image: url('../img/concept/concept01_sp@2x.png'),
+                    url('../img/concept/concept02_sp@2x.jpg'),
+                    url('../img/concept/concept03_sp@2x.jpg'),
+                    url('../img/concept/concept04_sp@2x.png');
+  background-repeat: no-repeat;
+  background-size: 306px, 169px, 220px, 170px;
+  background-position: left -108px top -10px,
+                       right 0px top 68px,
+                       left -53px bottom 299px,
+                       right 0px bottom 228px;
+  padding-top: 216px;
+
+  h1 {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .txt-concept {
+    margin-bottom: 50px;
+    padding: 0 15px;
+  }
+
+  @include mq-pc {
+    padding-top: 216px;
+    background-image: url('../img/concept/concept01.png'),
+                      url('../img/concept/concept02.jpg'),
+                      url('../img/concept/concept03.jpg'),
+                      url('../img/concept/concept04.png');
+    background-size: 652px, 487px, 570px, 404px;
+    background-size: 47.847vw, 35.561vw, 41.727vw, 29.5754vw;
+    background-position: left -27% top 8%,
+                         right -10.2% top 24.25%,
+                         left -22% top 48%,
+                         right 2.2% top 65.5%;
+
+   	@media print, screen and (min-width: 1367px) {
+      background-size: 652px, 487px, 570px, 404px;
+    }
+
+    h1 {
+      margin-bottom: 65px;
+    }
+
+    .txt-concept {
+      margin-bottom: 100px;
+    }
+  }
+}
+
+.section-media {
+  background-color: $c-white;
+
+  .ttl-media {
+    margin-bottom: 20px;
+
+    &__text {
+      display: block;
+      font-size: 24px;
+      letter-spacing: .18em;
+      line-height: 1.88;
+      text-align: center;
+      color: $c-blk;
+    }
+  }
+
+  @include mq-pc {
+    padding: 65px 0;
+
+    .ttl-media {
+      margin-bottom: 65px;
+
+      &__text {
+        font-size: 40px;
+      }
+    }
+  }
+}
+
+// //ビジョン
+// .concept {
+//   display: flex;
+//
+//   &-txt {
+//     width: 50%;
+//     margin-right: 56px;
+//
+//     p {
+//       margin-bottom: 36px;
+//     }
+//   }
+//
+//   &-img {
+//     width: 50%;
+//   }
+//
+//   .ttl-label {
+//     margin-bottom: 64px;
+//
+//     &__title {
+//       background-color: #da2026;
+//       color: #fff;
+//     }
+//   }
+//
+//   @include mq-mobile {
+//     flex-direction: column-reverse;
+//
+//     &-txt {
+//       width: 100%;
+//       margin-right: 0;
+//
+//       p {
+//         margin-bottom: 20px;
+//       }
+//     }
+//
+//     &-img {
+//       width: 100%;
+//       margin-bottom: 26px;
+//     }
+//
+//     .ttl-label {
+//       margin-bottom: 30px;
+//     }
+//   }
+// }
+//
+// //事業内容
+// .project {
+//   display: flex;
+//   flex-wrap: wrap;
+//
+//   &-inner {
+//     box-sizing: border-box;
+//     display: flex;
+//     width: 33.3%;
+//     padding: 12px 12px;
+//   }
+//
+//   .box-notice {
+//     background-color: $c-beige;
+//     width: 100%;
+//     padding: 50px 24px;
+//     border-radius: 20px;
+//     text-align: center;
+//
+//     &__title {
+//       margin-bottom: 43px;
+//       font-size: 1.8rem;
+//
+//       &:last-child {
+//         margin-bottom: 0;
+//       }
+//     }
+//
+//     &__text {
+//       font-size: 1.5rem;
+//       text-align: left;
+//     }
+//   }
+//
+//   @include mq-mobile {
+//
+//     &-inner {
+//       width: 50%;
+//     }
+//   }
+//
+//   @include mq-sp {
+//     flex-direction: column;
+//
+//     &-inner {
+//       box-sizing: border-box;
+//       width: 100%;
+//       padding: 12px 12px;
+//     }
+//
+//     .box-notice {
+//       height: 110px;
+//       padding: 40px 24px;
+//
+//       &__title {
+//         margin-bottom: 24px;
+//         font-size: 1.6rem;
+//       }
+//       &__text {
+//         font-size: 1.2rem;
+//       }
+//     }
+//   }
+// }
+//
+// //一休の歩み
+// .history {
+//   display: flex;
+//
+//   .ttl-wrap {
+//     width: 25%;
+//   }
+//
+//   .tbl-border {
+//     width: 75%;
+//   }
+//
+//   @include mq-mobile {
+//     flex-direction: column;
+//
+//     .ttl-wrap {
+//       width: 100%;
+//     }
+//
+//     .tbl-border {
+//       width: 100%;
+//     }
+//   }
+// }

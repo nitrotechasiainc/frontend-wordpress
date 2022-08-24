@@ -1,0 +1,11 @@
+/*============================================ IMPORT ALL FILE RESPONSIVE ============================================*/
+@import '1-UHD-3840/responsive';          //UHD (4K): 3840 x 2160 pixels hoặc 4096 x 2160 pixels.
+@import '2-QHD-Plus-2960/responsive';     //QHD+ (2K+): Có độ phân giải khoảng 3200 x 1800 pixels, 2960 x 1440 pixels, 3120 x 1440 pixels
+@import '3-QHD-2560/responsive';          //QHD (2K): 2560 x 1440 pixels.
+@import '4-FHD-Plus-2160/responsive';     //Full HD+ : Có độ phân giải khoảng 2160 x 1080 pixels, 2280 x 1080 pixels, 2340 x 1080 pixels
+@import '5-FHD-1920/responsive';          //Full HD: 1920 x 1080 pixels.
+@import '6-HD-Plus-1440/responsive';      // HD+: Có độ phân giải khoảng 1440 x 720 pixels và các biến thể như 1480 x 720 pixels, 1520 x 720 pixels,...
+@import '7-HD-1280/responsive';           //HD: 1280 x 720 pixels hay 1366 x 768 pixels.
+@import '8-Tablet-1024/responsive';       //XGA: 1024 x 768 pixels và có khung tỉ lệ 4:3
+@import '9-Mobile-large/responsive';      //Điện thoại di động màn hình lớn
+@import '10-Mobile-small/responsive';     //Điện thoại di động màn hình nhỏ

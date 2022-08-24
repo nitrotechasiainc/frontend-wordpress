@@ -1,0 +1,863 @@
+//mv
+
+.section-mv {
+  background-image: url('../img/top/mv_sp@2x.jpg?0001');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+  padding: 0;
+
+  .content {
+    width: 100%;
+    padding: 8.631vh 12.5vw;
+    box-sizing: border-box;
+
+    .copy-mv {
+      &__image {
+        width: 100%;
+        max-height: 200px;
+      }
+    }
+  }
+
+  @include mq-320 {
+    background-image: url('https://xn--w8j274qbbk.com/prd/wordpress/wp-content/themes/kyu-brand/assets/img/common/logo.svg');
+
+    .content {
+      height: 100%;
+      padding: 0 90px;
+
+      .copy-mv {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        padding: 10vh 0 12.2vh;
+        box-sizing: border-box;
+
+        &__image {
+          width: auto;
+          height: 76.27vh;
+          max-height: 600px;
+        }
+      }
+    }
+  }
+
+  @media print, screen and (min-width: 1367px) {
+    background-size: 1366px;
+  }
+}
+
+.section-top-news {
+  position: fixed;
+  padding: 0 15px;
+  left: 0;
+  bottom: 48px;
+
+  .lst-border {
+    &__item:last-child {
+      margin-bottom: 0;
+      padding-bottom: 0;
+      border-bottom: none;
+    }
+  }
+
+  @include mq-pc {
+    width: 100%;
+    padding: 0 30px;
+    bottom: 20px;
+
+    .content {
+      max-width: 450px;
+      margin-left: 0;
+    }
+  }
+}
+
+.top-copyrigth {
+  position: fixed;
+  background-color: $c-blk;
+  width: 100%;
+  padding: 10px 0;
+  font-family: $ff-noto-sans;
+  font-weight: $fw-noto-light;
+  font-size: 12px;
+  color: $c-white;
+  text-align: center;
+  bottom: 0;
+  left: 0;
+
+  @include mq-pc {
+    width: auto;
+    padding: 18px;
+    left: auto;
+    right: 0;
+  }
+}
+
+// .section-mv {
+//   position: relative;
+//
+//   .content {
+//     white-space: nowrap;
+//
+//     .txt {
+//       width: 30%;
+//       position: absolute;
+//       bottom: 15%;
+//       left: 10%;
+//       z-index: 100;
+//       color: #fff;
+//     }
+//
+//     .media-mv {
+//       position: relative;
+//
+//       &:before {
+//         background-color: #fff;
+//         width: 100%;
+//         height: 200px;
+//         position: absolute;
+//         bottom: -240px;
+//         left: -100px;
+//         z-index: 5;
+//         content: "";
+//       }
+//
+//       &:after {
+//         background-color: $c-red;
+//         width: 600px;
+//         height: 600px;
+//         border-radius: 500px;
+//         position: absolute;
+//         bottom: -200px;
+//         left: -70px;
+//         z-index: 1;
+//         content: "";
+//       }
+//     }
+//
+//     @include mq-mobile {
+//       .txt {
+//         width: 50%;
+//         bottom: 8%;
+//
+//         p:first-of-type {
+//           margin-bottom: 10px;
+//           font-size: 2.3rem;
+//         }
+//       }
+//
+//       .media-mv {
+//         background: url(../images/top/hero_pc.jpg) center center / cover no-repeat;
+//         height: 70vh;
+//
+//         &:before {
+//           height: 100px;
+//           bottom: -140px;
+//           left: -44px;
+//         }
+//
+//         &:after {
+//           width: 200px;
+//           height: 200px;
+//           border-radius: 100px;
+//           bottom: -80px;
+//           left: -40px;
+//         }
+//
+//         &__image {
+//           display: none;
+//         }
+//       }
+//     }
+//  }
+//
+//   @include mq-pc {
+//     .txt {
+//       p:first-of-type {
+//          margin-bottom: 10px;
+//         font-size: 3.0rem;
+//       }
+//     }
+//
+//     .media-mv {
+//       &:after {
+//         width: 400px;
+//         height: 400px;
+//         bottom: -100px;
+//       }
+//     }
+//   }
+//
+//   @include mq-pc-xl {
+//     .txt {
+//
+//       p:first-of-type {
+//         margin-bottom: 30px;
+//         font-size: 4.6rem;
+//       }
+//     }
+//     .media-mv {
+//       &:after {
+//         width: 600px;
+//         height: 600px;
+//         bottom: -200px;
+//       }
+//     }
+//   }
+// }
+//
+//
+// //キャンペーン
+// .section-pickup {
+//   margin: -70px 0 0 0;
+//   padding: 0;
+//   overflow: hidden;
+//   position: relative;
+//   z-index: 10;
+//
+//   .content {
+//     width: 100%;
+//     max-width: none;
+//     overflow-x: scroll;
+//     white-space: nowrap;
+//     -webkit-overflow-scrolling: touch;
+//     -ms-overflow-style: none;
+//     scrollbar-width: none;
+//
+//     .lst-pickup {
+//       margin:0;
+//       &__item {
+//         background-color: $c-white;
+//         padding: 40px 12px;
+//
+//         &:first-of-type {
+//           margin: 0 0 0 20%;
+//           padding-left: 40px;
+//           border-radius: 20px 0 0 20px;
+//         }
+//
+//         &:last-of-type {
+//           margin: 0 -8% 0 0;
+//           padding-right: 40px;
+//           border-radius: 0 20px 20px 0;
+//         }
+//       }
+//
+//       .media-pickup {
+//         &__content {
+//           display: flex;
+//           justify-content: space-between;
+//         }
+//       }
+//     }
+//   }
+//
+//   @include mq-mobile {
+//     margin: 0;
+//
+//     .content {
+//       .lst-pickup {
+//         &__item {
+//           padding: 20px 10px;
+//
+//           &:first-of-type {
+//             margin: 0 0 0 44px;
+//             padding-left: 20px;
+//           }
+//
+//           &:last-of-type {
+//             padding-right: 20px;
+//           }
+//         }
+//
+//         .media-pickup {
+//           &__icon {
+//             display: none;
+//           }
+//
+//           &__item {
+//             display: inline-block;
+//             width: 40%;
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
+//
+// //キャンペーン - safari,chrhomeスクロール非表示
+// .content::-webkit-scrollbar {
+//   display:none;
+// }
+//
+// .box::-webkit-scrollbar {
+//   display:none;
+// }
+//
+// //　ニュース
+// .section-top-news {
+//   padding-bottom: 80px;
+//   position: relative;
+//
+//   .content {
+//     display: flex;
+//     flex-wrap: wrap;
+//   }
+//
+//   .ttl-wrap {
+//     width: 30%;
+//   }
+//
+//   .lst-wrap {
+//     width: 70%;
+//   }
+//
+//   .btn-wrap--right {
+//     width: 100%;
+//
+//     .link-normal {
+//       justify-content: flex-end;
+//
+//       &__text {
+//         color: $c-blk;
+//         text-decoration: none;
+//       }
+//     }
+//   }
+//
+//   @include mq-mobile {
+//     .content {
+//       flex-direction: column;
+//     }
+//
+//     .ttl-wrap {
+//         width: 100%;
+//         margin: 0 0 34px 0;
+//     }
+//
+//     .lst-wrap {
+//       width: 100%;
+//     }
+//
+//     .lst-border {
+//       &__item {
+//         padding-bottom: 10px;
+//         border: none;
+//       }
+//     }
+//
+//     .media-topics {
+//       &__cat {
+//         .tag-positive {
+//           display: none;
+//         }
+//       }
+//     }
+//   }
+// }
+//
+// .section-top-shop {
+//   background-color: $c-red;
+//   width: 95%;
+//   padding: 80px 0 0 0;
+//   border-radius: 0 20px 20px 0;
+//   position: relative;
+//   color: $c-white;
+//
+//   .content {
+//     display: flex;
+//     flex-wrap: wrap;
+//     right: 0;
+//     z-index: 10;
+//
+//     .ttl-wrap {
+//       width: 90%;
+//       margin-left: 28px;
+//
+//       .ttl-large {
+//         &__text {
+//           color: $c-white;
+//         }
+//       }
+//
+//       .txt-md {
+//         margin-bottom: 60px;
+//       }
+//     }
+//
+//     .btn-wrap--right {
+//       width: 15%;
+//       margin-right: -200px;
+//
+//       .link-normal {
+//         padding-top: 30px;
+//
+//         &__text {
+//           color: $c-white;
+//         }
+//       }
+//     }
+//   }
+//
+//   .media {
+//     width: 100%;
+//   }
+//
+//   .media-shop {
+//     margin-right: -5%;
+//     margin-bottom: 4px;
+//     margin-left: 10%;
+//     position: relative;
+//
+//     &__link {
+//       width: 100%;
+//     }
+//
+//     &__note {
+//       width: 30%;
+//       position: absolute;
+//       bottom: 40px;
+//       left: 56px;
+//       color: $c-white;
+//       text-shadow: 0px 0px 3px #3d3d3d;
+//     }
+//
+//     &__title {
+//       font-size: 2.8rem;
+//     }
+//
+//     &__icon {
+//       position: absolute;
+//       top: 40px;
+//       right: 40px;
+//     }
+//   }
+//
+//   @include mq-mobile {
+//     width: 88%;
+//     padding: 27px 0 0 0;
+//
+//     .content {
+//       .btn-wrap--right {
+//         display: none;
+//       }
+//
+//       .ttl-wrap {
+//         .txt-md {
+//           margin-bottom: 30px;
+//         }
+//       }
+//     }
+//
+//     .media-shop {
+//       margin-right: -14%;
+//       margin-bottom: 2px;
+//
+//       &__note {
+//         width: 92%;
+//         bottom: 10px;
+//         left: 20px;
+//       }
+//
+//       &__title {
+//         font-size: 1.3rem;
+//       }
+//
+//       &__icon {
+//         width: 40px;
+//         top: 10px;
+//         right: 10px;
+//       }
+//     }
+//   }
+// }
+//
+// //メッセージ
+// .section-top-message {
+//   padding: 120px 16px;
+//
+//   .content {
+//     .concept {
+//       display: flex;
+//       justify-content: space-between;
+//     }
+//
+//     .concept-left {
+//       display: flex;
+//       justify-content: center;
+//
+//       .ttl-label {
+//         margin-top: 70px;
+//
+//         &__title {
+//           background-color: $c-red;
+//           color: $c-white;
+//         }
+//       }
+//     }
+//
+//     .concept-right {
+//       width: 50%;
+//
+//       .txt-md {
+//         margin-bottom: 40px;
+//       }
+//     }
+//   }
+//
+//   @include mq-mobile {
+//     padding: 40px 16px;
+//
+//     .content {
+//       .concept {
+//         flex-direction: column;
+//       }
+//
+//       .concept-left {
+//         justify-content: left;
+//         margin-bottom: 26px;
+//
+//         .ttl-label {
+//           margin-top:0;
+//         }
+//       }
+//
+//       .concept-right {
+//         width: 100%;
+//
+//         .txt-md {
+//           margin-bottom: 20px;
+//         }
+//       }
+//     }
+//   }
+// }
+//
+// //サイトマップ
+// .section-sitemap {
+//   padding: 0;
+//
+//   .content {
+//     width: 100%;
+//     max-width: 100%;
+//
+//     .media-2col {
+//       display: flex;
+//     }
+//
+//     .media-3col {
+//       display: flex;
+//     }
+//   }
+//
+//   .media-ikkyu {
+//     position: relative;
+//
+//     &__note {
+//       position: absolute;
+//       top:50%;
+//       left:50%;
+//       color: $c-white;
+//       text-align: center;
+//       -ms-transform: translate(-50%,-50%);
+//       -webkit-transform: translate(-50%,-50%);
+//       transform: translate(-50%,-50%);
+//     }
+//
+//     &__text {
+//       margin-top: 30px;
+//       position: relative;
+//       white-space: nowrap;
+//     }
+//
+//     &__text:before {
+//       background-color: $c-white;
+//       display: inline-block;
+//       width: 40px;
+//       height: 1px;
+//       position: absolute;
+//       top:-15px;
+//       left:50%;
+//       content: "";
+//       -ms-transform: translate(-50%,-50%);
+//       -webkit-transform: translate(-50%,-50%);
+//       transform: translate(-50%,-50%);
+//     }
+//   }
+//
+//   @include mq-mobile {
+//     padding: 0;
+//
+//     .content {
+//       .media-2col {
+//         .media-ikkyu {
+//           width: 50%;
+//
+//           &:before {
+//             display: block;
+//             padding-top: 100%;
+//             content: "";
+//           }
+//
+//           &__image {
+//             width: 100%;
+//             height: 100%;
+//             margin: auto;
+//             position: absolute;
+//             top: 0;
+//             right: 0;
+//             bottom: 0;
+//             left: 0;
+//             object-fit: cover;
+//           }
+//
+//           &__text {
+//             white-space: normal;
+//           }
+//         }
+//       }
+//       .media-3col {
+//         flex-direction: column;
+//
+//         .media-ikkyu {
+//           width: 100%;
+//
+//           &:before {
+//             display: block;
+//             padding-top: 30%;
+//             content: "";
+//           }
+//
+//           &__image {
+//             width: 100%;
+//             height: 100%;
+//             margin: auto;
+//             position: absolute;
+//             top:0;
+//             left:0;
+//             object-fit: cover;
+//             object-fit: cover;
+//           }
+//
+//           &__text {
+//             margin-top: 4px;
+//           }
+//         }
+//       }
+//     }
+//     .media-ikkyu {
+//       &__text:before {
+//         content: none;
+//       }
+//
+//       &__note {
+//         width: 85%;
+//       }
+//
+//       &__text {
+//         margin-top: 15px;
+//       }
+//
+//       &__title {
+//         font-size: 1.6rem;
+//       }
+//     }
+//   }
+// }
+//
+// //　SNS
+// .section-sns {
+//   background-color: $c-yellow-lt;
+//   padding: 80px 0;
+// }
+//
+// .info {
+//   display: flex;
+//
+//   .info-youtube {
+//     box-sizing: border-box;
+//     display: flex;
+//     width: 50%;
+//     height: 160px;
+//     padding: 20px 40px;
+//     border-right: 1px solid $c-gray-lt;
+//     border-left: 1px solid $c-gray-lt;
+//     position: relative;
+//
+//     &__titleWrap {
+//       box-sizing: border-box;
+//       width: 50%;
+//     }
+//
+//     &__image {
+//       margin-right: 12px;
+//     }
+//
+//     &__title {
+//       display: flex;
+//       margin-bottom: 10px;
+//       font-weight: $fw-noto-bold;
+//     }
+//
+//     iframe {
+//       box-sizing: border-box;
+//       width: 50%;
+//       padding-left: 20px;
+//     }
+//   }
+//
+//   .info-sns {
+//     box-sizing: border-box;
+//     width: 50%;
+//     padding: 20px 60px;
+//     border-right: 1px solid $c-gray-lt;
+//     text-align: center;
+//
+//     ul {
+//       display: flex;
+//       justify-content: space-around;
+//       margin-top: 30px;
+//
+//       li {
+//
+//         .btn-sns {
+//           &__icon {
+//             width: 40px;
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
+//
+// @include mq-mobile {
+//   .section-sns {
+//     padding: 40px 0;
+//   }
+//
+//   .info {
+//     flex-direction: column;
+//
+//     .info-youtube {
+//       flex-direction: column;
+//       width: 100%;
+//       height: 260px;
+//       margin-bottom: 40px;
+//       padding: 0 40px;
+//       border: none;
+//
+//       &__titleWrap {
+//         box-sizing: border-box;
+//         width: 100%;
+//       }
+//
+//       &__image {
+//         width: 35px;
+//         margin-right: 8px;
+//       }
+//
+//       &__title {
+//         justify-content: center;
+//         font-size: 1.6rem;
+//       }
+//
+//       &__text {
+//         padding-top: 180px;
+//       }
+//
+//       iframe {
+//         box-sizing: border-box;
+//         width: 100%;
+//         padding: 40px;
+//         position: absolute;
+//         top: 10px;
+//         left: 0;
+//       }
+//     }
+//
+//     .info-sns {
+//       width: 100%;
+//       padding: 0 40px;
+//       border-right: none;
+//       font-size: 1.6rem;
+//       text-align: center;
+//
+//       ul {
+//         margin-top: 22px;
+//
+//         li {
+//           font-size: 1.2rem;
+//
+//           .btn-sns {
+//             &__icon {
+//               width: 40px;
+//               margin-bottom: 12px;
+//             }
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
+//
+// //お問い合わせ
+// .section-contact {
+//   padding: 100px 0 ;
+//
+//   .content {
+//     .btn-wrap {
+//       border: 1px solid $c-blk;
+//       position: relative;
+//
+//       .btn-large {
+//         box-sizing: border-box;
+//         width: 100%;
+//         padding: 50px;
+//         text-align: center;
+//
+//         &__icon--after {
+//           position: absolute;
+//           top: 50%;
+//           right: 40px;
+//           transform: translateY(-50%);
+//         }
+//       }
+//     }
+//   }
+// }
+//
+// @include mq-mobile {
+//   .section-contact {
+//     padding: 30px 20px 44px 20px ;
+//
+//     .content {
+//       .btn-wrap {
+//         border: 1px solid $c-blk;
+//         position: relative;
+//
+//         .btn-large {
+//           padding: 25px;
+//
+//           &__text {
+//             font-size: 0;
+//           }
+//
+//           &__text:before {
+//             font-size: 1.7rem;
+//             content: 'お問い合わせ';
+//           }
+//
+//           &__icon--after {
+//             display: none;
+//           }
+//         }
+//       }
+//     }
+//   }
+// }

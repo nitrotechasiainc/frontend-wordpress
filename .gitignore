@@ -1,0 +1,34 @@
+### Idea configuration and environment
+.idea/
+.vscode/
+.data/
+
+### Wordpress - ignore core, configuration, examples, uploads and logs.
+/wp-admin/
+/wp-includes/
+/index.php
+/license.txt
+/readme.html
+/wp-*.php
+/xmlrpc.php
+# htaccess
+/.htaccess
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# Dependency directories
+node_modules/
+
+# yarn v2
+.yarn*
+.pnp.*
+yarn.lock
+
+# Generate output
+dist

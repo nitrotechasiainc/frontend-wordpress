@@ -1,0 +1,12 @@
+/**=========== landscape phones ===========*/
+@media only screen and (max-width:768px) {
+    /* ============ Layout ============*/
+    @import 'layout/header';
+    @import 'layout/main';
+    @import 'layout/footer';
+
+    /* ============ Page, Post, Archive ============*/
+    @import 'pages/home';
+    @import 'pages/archive';
+    @import 'pages/single';
+}

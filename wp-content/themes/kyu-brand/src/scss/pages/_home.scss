@@ -1,0 +1,184 @@
+/**=========== HOME PAGE ===========*/
+body.home{
+    #content{
+        .ast-container{
+            /*Content*/
+            #primary{
+                margin: 5px 0 0 0;
+                #main{
+                    .section{
+                        position: relative;
+                        .section-content{
+                            position: relative;
+                            z-index: 9;
+                            background-color: #F9F9F9;
+                            border-radius: 5px;
+                            .tittle{
+                                padding: 5px 0 5px 10px;
+                                font-size: 25px;
+                                font-weight: 500;
+                                background-color: #fff;
+                                border-top-right-radius: 5px;
+                                border-top-left-radius: 5px;
+                                border-bottom: 1px solid #555;
+                            }
+                            .ast-row{
+                                margin: 0;
+                                display: flex;
+                                justify-content: center;
+                                align-items: flex-start;
+                                align-content: center;
+                                flex-wrap: wrap;
+                                .post-item{
+                                    background-color: #fff;
+                                    display: flex;
+                                    flex-direction: column;
+                                    flex-wrap: nowrap;
+                                    justify-content: center;
+                                    align-items: center;
+                                    align-content: center;
+                                    border-radius: 5px;
+                                    a{
+                                        width: 100%;
+                                    }
+                                    .avatar{
+                                        border: 2px solid #f5f5f5;
+                                        border-radius: 5px;
+                                        --width100: 100%;
+                                        width: var(--width100);
+                                        height: calc( var(--width100)/1.6);
+                                    }
+                                    .tittle-content{
+                                        font-size: 24px;
+                                        padding: 5px;
+                                        line-height: 26px;
+                                        transition: all 1s ease;
+                                    }
+                                }
+                                article.post{
+                                    padding: 0;
+                                    .ast-no-thumb{
+                                        .ast-blog-featured-section{
+                                            background-image: url(images/Thumbnail-post.svg);
+                                            background-repeat: no-repeat;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .section::before{
+                        content: '';
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        filter: blur(10px);
+                        transform: translateY(0px) scale(1.003, 1.003);
+                        background: linear-gradient(90deg, var(--k-color-Blue-blur) 0%, var(--k-color-Brown-blur) 50%, var(--k-color-Blue-blur) 100%);
+                        background-size: 400% 400%;
+                        animation: gradient-body 4s ease infinite;
+                        @keyframes gradient-body {
+                            0% {
+                                background-position: 0% 50%;
+                            }
+                            50% {
+                                background-position: 100% 50%;
+                            }
+                            100% {
+                                background-position: 0% 50%;
+                            }
+                        }
+                    }
+                    .tin-tuc-viec-lam{
+                        .section-content{
+                            .ast-row{
+                                .post-item{
+                                    width: 48%;
+                                    margin: 15px 1%;
+                                }
+                            }
+                        }
+                    }
+                    // Kỹ năng nghề nghiệp
+                    .ky-nang-nghe-nghiep{
+                        margin-top: 30px;
+                        .section-content{
+                            .ast-row{
+                                .post-item{
+                                    width: 100%;
+                                    margin: 5px 15px;
+                                    flex-wrap: wrap;
+                                    align-items: flex-start;
+                                    flex-direction: row;
+                                    .avatar-wrap{
+                                        width: 20%;
+                                        .avatar{
+                                            margin-top: 10px;
+                                        }
+                                    }
+                                    .content-wrap{
+                                        width: 80%;
+                                        padding-left: 15px;
+                                        p{
+                                            margin: 0;
+                                            font-size: 16px;
+                                            line-height: 20px;
+                                            display: contents;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .kien-thuc{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        align-content: center;
+                        .kien-thuc-viec-lam, .kien-thuc-tuyen-dung{
+                            width: 48%;
+                            margin: 30px 1% 30px 1%;
+                            .section-content{
+                                .ast-row{
+                                    .post-item{
+                                        width: 100%;
+                                        margin: 5px 15px;
+                                        flex-wrap: wrap;
+                                        align-items: flex-start;
+                                        flex-direction: row;
+                                        .avatar-wrap{
+                                            width: 20%;
+                                            .avatar{
+                                                margin-top: 10px;
+                                            }
+                                        }
+                                        .content-wrap{
+                                            width: 80%;
+                                            padding-left: 15px;
+                                            .tittle-content{
+                                                font-size: 16px;
+                                                line-height: 20px;
+                                                font-weight: 400;
+                                            }
+                                            p{
+                                                margin: 0;
+                                                font-size: 16px;
+                                                line-height: 20px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            #secondary{
+                margin: 5px 0 0 0;
+            }
+        }
+    }
+}

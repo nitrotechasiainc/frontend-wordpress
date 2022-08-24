@@ -1,0 +1,246 @@
+@charset "utf-8";
+
+.footer {
+  $this: &;
+  background-color: $c-blk;
+  color: $c-white;
+  text-align: center;
+
+  &-inner {
+    padding: 50px 15px 20px;
+  }
+
+  &-logo {
+    width: 102px;
+    margin: 0 auto;
+  }
+
+  &-nav {
+    $nav: &;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+    padding: 32px 0 16px;
+    margin-bottom: 30px;
+
+    &::after {
+      position: absolute;
+      content: '';
+      background-color: $c-white;
+      width: 24px;
+      height: 1px;
+      bottom: 0;
+      right: 50%;
+      transform: translateX(50%);
+    }
+
+    &__list {
+      display: flex;
+      flex-wrap: wrap;
+      width: 50%;
+      margin: 0 auto;
+    }
+
+    &__item {
+			width: 100%;
+		}
+
+		&__link {
+			display: block;
+			padding: 15px;
+			font-size: 16px;
+			color: $c-white;
+			line-height: 1.1;
+			letter-spacing: 0.05em;
+			text-align: center;
+			white-space: nowrap;
+		}
+  }
+
+  &-sns {
+    &__link {
+      color: $c-white;
+    }
+
+    &__icon {
+      width: 40px;
+    }
+
+    &__text {
+      font-size: 14px;
+      text-align: center;
+    }
+  }
+
+  &-bottom {
+    padding-bottom: 20px;
+  }
+
+  &-copy {
+    font-family: $ff-noto-sans;
+    font-weight: $fw-noto-light;
+    font-size: 12px;
+    text-align: center;
+  }
+
+  &-pagetop {
+    padding-top: 49px;
+    
+    &__link {
+      position: relative;
+      display: block;
+      color: $c-white;
+      margin-bottom: 28px;
+      padding-top: 10px;
+      font-family: $ff-shippori-mincho;
+      font-weight: $fw-noto-bold;
+      font-size: 24px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+
+      &::before {
+        position: absolute;
+        content: '';
+        background-color: $c-white;
+        height: 49px;
+        width: 1px;
+        bottom: 100%;
+        left: 50%;
+      }
+    }
+  }
+
+  &.shop {
+    #{$this}-nav {
+      padding-bottom: 0;
+      margin-bottom: 0;
+
+      &::after {
+        display: none;
+      }
+    }
+  }
+
+  @include mq-pc {
+    position: relative;
+
+    &-inner {
+      display: flex;
+      align-items: center;
+      width: 80%;
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 120px 15px;
+    }
+
+    &-logo {
+      width: 150px;
+    }
+
+    &-nav {
+      flex-wrap: nowrap;
+      align-items: center;
+      justify-content: flex-end;
+      padding: 0;
+      margin: 0;
+
+      &::after {
+        position: relative;
+        width: 1px;
+        height: 24px;
+        right: 0;
+        bottom: 0;
+        margin: auto 5px auto 5px;
+      }
+
+      &__list {
+        flex-wrap: nowrap;
+        width: auto;
+        margin: 0;
+      }
+
+      &__item {
+        width: auto;
+      }
+
+      &__link {
+        padding: 15px 35px;
+      }
+    }
+
+    &-sns {
+      &__link {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 15px 20px 15px 35px;
+      }
+
+      &__icon {
+        order: 2;
+        width: 20px;
+      }
+    }
+
+    &-bottom {
+      padding: 0;
+    }
+
+    &-copy {
+      position: absolute;
+      width: 80%;
+      max-width: 1000px;
+      right: 50%;
+      bottom: 120px;
+      text-align: right;
+      transform: translateX(50%);
+    }
+
+    &-pagetop {
+      position: absolute;
+      width: 10%;
+      padding-top: 0;
+      left: 100%;
+      transform: translate(-100%, -100%);
+
+      &__link {
+        margin-bottom: 0;
+      }
+    }
+
+    &.shop {
+      #{$this}-inner {
+        display: block;
+        padding: 65px 15px 24px;
+      }
+
+      #{$this}-logo {
+        width: 104px;
+        margin-bottom: 24px;
+      }
+
+      #{$this}-nav {
+        justify-content: center;
+
+        &__list {
+          gap: 32px;
+        }
+
+        &__link {
+          padding: 0;
+        }
+      }
+
+      #{$this}-copy {
+        position: static;
+        margin: 0 auto 20px;
+        right: auto;
+        text-align: center;
+        transform: translateX(0);
+      }
+    }
+  }
+}

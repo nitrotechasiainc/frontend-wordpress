@@ -1,0 +1,54 @@
+@charset "utf-8";
+
+//color
+$c-red:       #B40019;
+// $c-red-dk:  #a71116;
+// $c-yellow:  #ffe200;
+// $c-blue:    #1B6B9D;
+// $c-sky:     #D7F4FF;
+// $c-green:   #589B4F;
+// $c-orange:  #F0770D;
+// $c-yellow-lt: #FCFAF4;
+$c-beige:    #9B794B;
+$c-beige-lt: #DDC3A0;
+
+//gry-scale
+$c-blk:      #040001;
+$c-gray-dk:  #2C2C2C;
+$c-gray:     #C7C7C7;
+// $c-gray-lt:  #EEEEEE;
+$c-white:    #fff;
+
+$c-theme:    $c-beige;
+$c-theme-lt: $c-beige-lt;
+// $c-sub:      $c-blue;
+// $c-accent:   $c-orange;
+$c-text:     $c-white;
+$c-link:     $c-red;
+$c-error:    $c-red;
+
+// $c-h-bg:  $c-red;
+// $c-h-txt: $c-white;
+// $c-h-ul:  $c-white;
+// $c-h-btn: $c-white;
+
+$gry-border: #C7C7C7;
+$gry-border-dk: #2C2C2C;
+
+// $gry-bg: rgba(96, 125, 139, .03);
+// $gry-bg-hover: #c8c8c8;
+
+// $gry-tag: #ccc;
+
+//animation
+$anm-hover: .7s;
+
+//font-familly
+$ff-shippori-mincho: 'Shippori Mincho B1', 'YuMincho', 'Hiragino Mincho ProN', 'Yu Mincho', serif;
+$fw-shippori-normal: 500;
+$fw-shippori-bold: 700;
+
+$ff-noto-sans: 'Noto Sans JP', "游ゴシック体", YuGothic, "游ゴシック medium", yu gothic medium, YuGothicM, yu gothic, "メイリオ", Meiryo, "ヒラギノ角ゴ pro w3", hiragino kaku gothic pro, Osaka, "ms pゴシック", ms pgothic, sans-serif;
+$fw-noto-light: 300;
+$fw-noto-normal: 500;
+$fw-noto-bold: 700;

@@ -1,0 +1,34 @@
+/**=========== SIDEBAR ===========*/
+body{
+    #content{
+        .ast-container{
+            #secondary{
+                padding: 0;
+                .sidebar-main{
+                    padding: 5px 0;
+                    background-color: #f9f9f9;
+                    box-shadow: 0 0 3px 0 var(--k-color-Blue-light-blur);
+                    border-radius: 5px;
+                    .widget{
+                        background-color: #fff;
+                        margin: 0 5px 30px;
+                        padding: 10px;
+                        border-radius: 5px;
+                        box-shadow: 0 0 10px 0 var(--k-color-Blue-blur);
+                        .widget-title{
+                            background: -webkit-linear-gradient(var(--k-color-Blue-100), var(--k-color-Blue-70)) !important;
+                            color: #fff;
+                            background-clip: inherit;
+                            -webkit-text-fill-color: #fff;
+                            margin: 0;
+                            padding-left: 5px;
+                        }
+                    }
+                    .widget:last-child {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+    }
+}

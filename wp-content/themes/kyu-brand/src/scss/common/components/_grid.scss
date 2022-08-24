@@ -1,0 +1,31 @@
+@charset "utf-8";
+
+.grid {
+  $this: &;
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -10px;
+  }
+
+  &__item {
+    box-sizing: border-box;
+    padding: 10px;
+  }
+
+  @include mq-pc {
+    &__list {
+      margin: -56px;
+    }
+
+    &__item {
+      width: 50%;
+      padding: 28px;
+    }
+  }
+
+  &--lg {
+
+  }
+}

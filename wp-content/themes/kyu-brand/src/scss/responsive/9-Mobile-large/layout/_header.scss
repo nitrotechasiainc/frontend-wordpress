@@ -1,0 +1,149 @@
+/**=========== HEADER ===========*/
+header#masthead{
+    /* Header Mobile */
+    #ast-mobile-header{
+        // Header Top - social
+        .ast-above-header-wrap{
+            .ast-above-header-bar{
+                min-height: 0;
+                padding: 0;
+                background-color: #2980b9;
+                .ast-builder-grid-row{
+                    // Logo
+                    .site-header-above-section-left{
+                        .site-branding{
+                            padding: 0;
+                            .site-logo-img{
+                                padding: 0 0 0 5px;
+                                a{
+                                    img{
+                                        height: 30px;
+                                        max-width: max-content;
+                                        width: auto;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    // Toggle Button
+                    .site-header-above-section-right{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        align-content: center;
+                        .ast-header-html-2{
+                            padding: 0;
+                            .ast-builder-html-element{
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                align-content: center;
+                                .contact{
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    align-content: center;
+                                    br{
+                                        display: none;
+                                    }
+                                    a{
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                        align-content: center;
+                                        color: #fff;
+                                        font-size: 16.5px;
+                                        img{
+                                            width: 20px;
+                                            height: auto;
+                                        }
+                                    }
+                                    .divider{
+                                        margin: 0;
+                                        padding: 0 1px;
+                                        color: #fff;
+                                        font-size: 18px;
+                                        font-weight: 100;
+                                    }
+                                }
+                            }
+                        }
+                        .ast-header-search{
+                            padding: 0;
+                            .ast-search-icon{
+                                
+                                .astra-search-icon{
+                                    background: linear-gradient(to bottom, #ffffff 0%,#d8d8d8 100%);
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    align-content: center;
+                                    width: 20px;
+                                    height: 20px;
+                                    border-radius: 5px;
+                                    .icon-search{
+                                        color: #2980b9;
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                        align-content: center;
+                                        svg{
+                                            margin: 0;
+                                            padding: 0;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .ast-button-wrap{
+                            .menu-toggle{
+                                padding: 0 5px 0 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        // Header main - Menu
+        .ast-main-header-wrap{
+            .ast-primary-header-bar{
+                padding: 0 5px;
+                min-height: 0;
+                .ast-builder-grid-row{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    align-content: space-between;
+                    flex-wrap: nowrap;
+                    .site-header-primary-section-left{
+                        display: none;
+                    }
+                    .site-header-primary-section-center{
+                        width: 90%;
+                        .main-navigation{
+                            ul.main-header-menu{
+                                display: flex;
+                                justify-content: space-between;
+                                align-items: center;
+                                align-content: space-between;
+                                flex-wrap: nowrap;
+                                padding: 0 5px;
+                                border: none;
+                                background-color: #fff;
+                                li.menu-item{
+                                    width: fit-content;
+                                    border: none;
+                                    a{
+                                        padding: 0;
+                                        border: none;
+                                        background-color: #fff;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

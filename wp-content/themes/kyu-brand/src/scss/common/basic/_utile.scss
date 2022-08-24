@@ -1,0 +1,40 @@
+@charset "utf-8";
+
+.sp {
+	@include mq-tab {
+		display: none !important;
+	}
+}
+
+.tab {
+	@include mq-sp {
+		display: none !important;
+	}
+	@include mq-pc {
+		display: none !important;
+	}
+}
+
+.mobile {
+	@include mq-pc {
+		display: none !important;
+	}
+}
+
+.pc {
+	@include mq-mobile {
+		display: none !important;
+	}
+}
+
+.facebook-widget {
+	text-align: center;
+}
+
+.ta-c {
+	text-align: center;
+}
+
+.tc-w {
+	color: $c-blk;
+}

@@ -1,0 +1,46 @@
+/**=========== ARCHIVE ===========*/
+body.archive{
+    #content{
+        .ast-container{
+            /*Content*/
+            #primary{
+                padding-top: 5px;
+                #main{
+                    .ast-row{
+                        article.post{
+                            padding: 5px;
+                            margin: 10px 0;
+                            border-radius: 5px;
+                            .post-content{
+                                display: flex;
+                                flex-wrap: wrap;
+                                .ast-blog-featured-section{
+                                    --width100: 90vw;
+                                    width: var(--width100);
+                                    height: calc( var(--width100)/1.6);
+                                }
+                                .entry-header{
+                                    width: 100%;
+                                    margin: 0;
+                                    padding: 0;
+                                    .entry-title{
+                                        padding: 5px;
+                                        font-size: 20px;
+                                    }
+                                }
+                                .entry-content{
+                                    width: 100%;
+                                    p{
+                                        margin: 0;
+                                        display: contents;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                
+            }
+        }
+    }
+}

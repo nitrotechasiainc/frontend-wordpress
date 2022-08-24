@@ -1,0 +1,15 @@
+{
+  "name": "wordpress",
+  "packageManager": "yarn@3.2.2",
+  "author": "Nitro Tech Asia",
+  "description": "Website interface editing",
+  "version": "1.0.0",
+  "license": "MIT",
+  "scripts": {
+    "build": "node-sass wp-content/themes/kyu-brand/src/scss -o wp-content/themes/kyu-brand/assets/css/build",
+    "watch": "yarn build && yarn build -w"
+  },
+  "devDependencies": {
+    "node-sass": "^7.0.1"
+  }
+}

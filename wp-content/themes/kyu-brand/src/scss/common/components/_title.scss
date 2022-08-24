@@ -1,0 +1,192 @@
+@charset "utf-8";
+
+.ttl-wrap {
+	@include mq-mobile {
+	}
+
+	@include mq-pc {
+	}
+
+	&--center {
+		display: flex;
+		justify-content: center;
+
+		@include mq-mobile {
+		}
+
+		@include mq-pc {
+		}
+	}
+}
+
+.ttl-large {
+  $this: &;
+	margin-bottom: 20px;
+
+	&__text {
+		display: block;
+		font-family: $ff-shippori-mincho;
+		font-size: 30px;
+		letter-spacing: 0.1em;
+		line-height: 1.8;
+		color: $c-white;
+	}
+
+  &--theme {
+    #{$this}__text {
+      color: $c-theme;
+    }
+  }
+
+	@include mq-pc {
+
+		&__text {
+			font-size: 40px;
+		}
+	}
+}
+
+.ttl-medium {
+  $this: &;
+	margin-bottom: 10px;
+
+	&__text {
+    display: block;
+		font-family: $ff-shippori-mincho;
+    font-size: 24px;
+		letter-spacing: 0.1em;
+    color: $c-white;
+	}
+
+	&--theme {
+		@extend #{$this};
+
+		#{$this}__text {
+			color: $c-theme;
+		}
+	}
+
+	@include mq-pc {
+		margin-bottom: 20px;
+
+		&__text {
+			font-size: 30px;
+		}
+	}
+}
+
+.ttl-small {
+  $this: &;
+	margin-bottom: 10px;
+
+	&__text {
+    display: block;
+		font-family: $ff-shippori-mincho;
+    font-size: 20px;
+		letter-spacing: 0.1em;
+    color: $c-white;
+	}
+
+	&--theme {
+		@extend #{$this};
+
+		#{$this}__text {
+			color: $c-theme;
+		}
+	}
+
+	@include mq-pc {
+		margin-bottom: 20px;
+
+		&__text {
+			font-size: 24px;
+		}
+	}
+}
+
+.ttl-line {
+	$this: &;
+	position: relative;
+
+	&::before {
+		position: absolute;
+		display: inline-block;
+		content: '';
+		background-color: $c-white;
+		width: 19px;
+		height: 1px;
+		top: 19px;
+		left: 0;
+	}
+
+	&__text {
+    display: block;
+		padding-left: 30px;
+		font-family: $ff-shippori-mincho;
+    font-size: 20px;
+		letter-spacing: 0.1em;
+    color: $c-white;
+	}
+
+	&--large {
+		@extend #{$this};
+		margin-bottom: 10px;
+
+		&::before {
+			top: 29px;
+		}
+
+    #{$this}__text {
+      color: $c-white;
+			font-size: 30px;
+    }
+  }
+
+	@include mq-pc {
+		&--large {
+			margin-bottom: 20px;
+
+			&::before {
+				width: 50px;
+				top: 39px;
+			}
+
+			#{$this}__text {
+				padding-left: 65px;
+				font-size: 40px;
+			}
+		}
+	}
+}
+
+.ttl-access {
+	font-family: $ff-shippori-mincho;
+	font-size: 20px;
+	font-weight: $fw-shippori-bold;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.section-title {
+	color: $c-white;
+	font-size: 24px;
+	font-weight: 500;
+	text-align: center;
+	line-height: 1;
+	text-transform: uppercase;
+	padding-bottom: 11px;
+
+	&-en {
+		color: $c-white;
+		font-size: 14px;
+		text-align: center;
+		line-height: 1;
+		font-weight: 500;
+		line-height: 1;
+		position: relative;
+	}
+
+	@include mq-pc {
+		font-size: 48px;
+	}
+}
