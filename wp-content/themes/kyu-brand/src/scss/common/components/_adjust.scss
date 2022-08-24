@@ -1,44 +1,44 @@
 @charset "utf-8";
 
 .mb-xs {
-  margin-bottom: 8px;
+    margin-bottom: 8px;
 }
 
 .mb-sm {
-  margin-bottom: 16px;
+    margin-bottom: 16px;
 }
 
 .mb-md {
-  margin-bottom: 24px;
+    margin-bottom: 24px;
 }
 
 .mb-lg {
-  margin-bottom: 32px;
+    margin-bottom: 32px;
 }
 
 .mb-xl {
-  margin-bottom: 40px;
+    margin-bottom: 40px;
 }
 
 @include mq-pc {
 
-.mb-xs {
-  margin-bottom: 8px;
-}
+    .mb-xs {
+        margin-bottom: 8px;
+    }
 
-.mb-sm {
-  margin-bottom: 16px;
-}
+    .mb-sm {
+        margin-bottom: 16px;
+    }
 
-.mb-md {
-  margin-bottom: 24px;
-}
+    .mb-md {
+        margin-bottom: 24px;
+    }
 
-.mb-lg {
-  margin-bottom: 32px;
-}
+    .mb-lg {
+        margin-bottom: 32px;
+    }
 
-.mb-xl {
-  margin-bottom: 40px;
-}
+    .mb-xl {
+        margin-bottom: 40px;
+    }
 }

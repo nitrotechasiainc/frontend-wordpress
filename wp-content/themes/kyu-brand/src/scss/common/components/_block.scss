@@ -1,89 +1,89 @@
 @charset "utf-8";
 
 .blk-shoplist {
-  margin-bottom: 50px;
-
-  &:last-child {
-    margin-bottom: 0;
-  }
-
-  @include mq-pc {
-    display: flex;
-
-    &__title {
-      margin-right: 30px;
-      margin-bottom: 0!important;
-      padding-right: 40px;
-      border-right: solid 2px #{$c-theme};
+    margin-bottom: 50px;
+    
+    &:last-child {
+        margin-bottom: 0;
     }
 
-    >*:nth-child(2) {
-      flex-grow: 2;
+    @include mq-pc {
+        display: flex;
+
+        &__title {
+            margin-right: 30px;
+            margin-bottom: 0 !important;
+            padding-right: 40px;
+            border-right: solid 2px #{$c-theme};
+        }
+
+        > *:nth-child(2) {
+            flex-grow: 2;
+        }
     }
-  }
 }
 
 .blk-line {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
-  color: $c-white;
-
-  &__content, &__register {
-    width: 100%;
-  }
-
-  &__text {
-    margin-bottom: 30px;
-    font-size: 14px;
-    line-height: 1.8;
-    text-align: center;
-  }
-
-  &__feature {
     display: flex;
-    margin-bottom: 20px;
-    font-size: 20px;
-    line-height: 1.6;
+    flex-wrap: wrap;
+    gap: 30px;
+    color: $c-white;
 
-    &:last-child {
-      margin-bottom: 0px;
-    }
-
-    .dot {
-      display: block;
-      margin-right: 9px;
-    }
-
-    .txt-underline {
-      font-size: 24px;
-    }
-  }
-
-  @include mq-pc {
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    align-items: center;
-
-    &__content {
-      width: 52%;
+    &__content, &__register {
+        width: 100%;
     }
 
     &__text {
-      margin-bottom: 20px;
-      font-size: 14px;
-      text-align: left;
+        margin-bottom: 30px;
+        font-size: 14px;
+        line-height: 1.8;
+        text-align: center;
     }
 
-    &__register {
-      width: fit-content;
-      height: fit-content;
-      display: flex;
-      gap: 40px;
+    &__feature {
+        display: flex;
+        margin-bottom: 20px;
+        font-size: 20px;
+        line-height: 1.6;
+
+        &:last-child {
+            margin-bottom: 0px;
+        }
+
+        .dot {
+            display: block;
+            margin-right: 9px;
+        }
+
+        .txt-underline {
+            font-size: 24px;
+        }
     }
 
-    .txt-underline {
-      font-size: 30px;
+    @include mq-pc {
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+
+        &__content {
+            width: 52%;
+        }
+
+        &__text {
+            margin-bottom: 20px;
+            font-size: 14px;
+            text-align: left;
+        }
+
+        &__register {
+            width: fit-content;
+            height: fit-content;
+            display: flex;
+            gap: 40px;
+        }
+
+        .txt-underline {
+            font-size: 30px;
+        }
     }
-  }
 }

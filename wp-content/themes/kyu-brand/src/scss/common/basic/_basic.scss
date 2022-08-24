@@ -2,59 +2,59 @@
 
 /*基本の設定*/
 html {
-	font-size: 62.5%;
+    font-size: 62.5%;
 }
 
 body {
-	// background-color: $c-red;
-	display: flex;
-	flex-flow: column;
-	min-height: 100vh;
-	font-family: $ff-shippori-mincho;
-	font-size: 1.6rem;
-	line-height: 1.8;
-	color: $c-blk;
+    // background-color: $c-red;
+    display: flex;
+    flex-flow: column;
+    min-height: 100vh;
+    font-family: $ff-shippori-mincho;
+    font-size: 1.6rem;
+    line-height: 1.8;
+    color: $c-blk;
 }
 
 main {
-  flex: 1;
+    flex: 1;
 }
 
 a {
-	color: #000;
-	text-decoration: none;
+    color: #000;
+    text-decoration: none;
 
-	&:hover{
-		opacity: .7;
-		transition: $anm-hover;
-	}
+    &:hover {
+        opacity: .7;
+        transition: $anm-hover;
+    }
 }
 
 ul, ol, dl, dt, dd {
-	margin:0;
-	padding:0;
-	list-style:none;
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 
 a > img {
-	vertical-align:bottom;
+    vertical-align: bottom;
 }
 
 img {
-	max-width:100%;
-	vertical-align: bottom;
+    max-width: 100%;
+    vertical-align: bottom;
 }
 
 h2 {
-	font-size: 3.6rem;
+    font-size: 3.6rem;
 }
 
 @include mq-sp {
-	body,h3 {
-		font-size: 1.2rem;
-	}
+    body, h3 {
+        font-size: 1.2rem;
+    }
 
-	h2 {
-		font-size: 1.6rem;
-	}
+    h2 {
+        font-size: 1.6rem;
+    }
 }

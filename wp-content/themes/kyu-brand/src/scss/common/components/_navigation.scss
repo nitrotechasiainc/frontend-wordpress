@@ -1,90 +1,90 @@
 @charset "utf-8";
 
 .nav-bread {
-  $this: &;
-  background-color: #FCFAF4;
-
-  &__list {
-    box-sizing: border-box;
-    display: flex;
-    width: 90%;
-    max-width: 1072px;
-    margin: 0 auto;
-    padding: 16px 0;
-  }
-
-  &__item {
-    font-size: 12px;
-
-    &::after {
-      display: inline-block;
-      margin: 0 16px;
-      color: #A2A2A2;
-      content: ">";
-    }
-
-    &:last-child {
-      &::after {
-        display: none;
-        content: none;
-      }
-    }
-  }
-
-  &__link {
-    color: #373737;
-    opacity: .5;
-
-    &:hover {
-      color: $c-theme;
-      text-decoration: underline;
-      opacity: 1;
-    }
-  }
-
-	@include mq-sp {
-		display: none;
-	}
-}
-
-.nav-shop {
-  $this: &;
-
-  &__item {
-    margin-bottom: 10px;
-  }
-
-  &__link {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px;
-    border: #000 1px solid;
-  }
-
-  @include mq-pc {
+    $this: &;
+    background-color: #FCFAF4;
 
     &__list {
-      display: flex;
-      justify-content: center;
-      margin: 0 -10px;
+        box-sizing: border-box;
+        display: flex;
+        width: 90%;
+        max-width: 1072px;
+        margin: 0 auto;
+        padding: 16px 0;
     }
 
     &__item {
-      box-sizing: border-box;
-      width: 25%;
-      margin: 0;
-      padding: 10px;
+        font-size: 12px;
+
+        &::after {
+            display: inline-block;
+            margin: 0 16px;
+            color: #A2A2A2;
+            content: ">";
+        }
+
+        &:last-child {
+            &::after {
+                display: none;
+                content: none;
+            }
+        }
     }
 
     &__link {
-      display: flex;
-      justify-content: space-between;
+        color: #373737;
+        opacity: .5;
+
+        &:hover {
+            color: $c-theme;
+            text-decoration: underline;
+            opacity: 1;
+        }
     }
 
-    &__text {
-      font-size: 17px;
+    @include mq-sp {
+        display: none;
+    }
+}
+
+.nav-shop {
+    $this: &;
+
+    &__item {
+        margin-bottom: 10px;
     }
 
-  }
+    &__link {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px;
+        border: #000 1px solid;
+    }
+
+    @include mq-pc {
+
+        &__list {
+            display: flex;
+            justify-content: center;
+            margin: 0 -10px;
+        }
+
+        &__item {
+            box-sizing: border-box;
+            width: 25%;
+            margin: 0;
+            padding: 10px;
+        }
+
+        &__link {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &__text {
+            font-size: 17px;
+        }
+
+    }
 }

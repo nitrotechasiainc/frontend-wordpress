@@ -22,6 +22,7 @@ ___
   `yarn build`
 - Watch and Build scss to css:
   `yarn watch`
+
 ___
 
 ### Project structure
@@ -31,10 +32,14 @@ ___
 ├── wp-content/
 │ └── themes/
 │     └── kyu-brand/
-│         ├── assets/
+│         ├── assets/css/build/
 │         └── src/
-│             ├── assets/
-│             └── style.scss
+│             ├── img/
+│             ├── js/
+│             └── scss/
+│                 ├── common/
+│                 ├── modules/
+│                 └── pages/
 ├── wp-content
 ```
 

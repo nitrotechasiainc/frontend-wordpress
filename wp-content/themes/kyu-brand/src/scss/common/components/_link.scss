@@ -1,23 +1,23 @@
 @charset "utf-8";
 
 .link-more {
-  color: $c-white;
-
-  &__text {
     color: $c-white;
-    font-size: 16px;
-    letter-spacing: 0.1em;
 
-    &::after {
-      content: '';
-      display: inline-block;
-      background-color: $c-white;
-      width: 41px;
-      height: 1px;
-      margin-left: 18px;
-      vertical-align: middle;
+    &__text {
+        color: $c-white;
+        font-size: 16px;
+        letter-spacing: 0.1em;
+
+        &::after {
+            content: '';
+            display: inline-block;
+            background-color: $c-white;
+            width: 41px;
+            height: 1px;
+            margin-left: 18px;
+            vertical-align: middle;
+        }
     }
-  }
 }
 
 //

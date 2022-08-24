@@ -1,250 +1,250 @@
 .shop-top {
 
-  .section {
-    @include mq-pc {
-      padding: 120px 0;
-    }
-  }
-
-  .section-mv {
-    height: calc(100vh - 90px);
-    padding: 0;
-    margin-top: 90px;
-
-    .content {
-      padding: 0px 11.733vw;
-
-      @include mq-pc {
-        padding: 0 120px;
-      }
-    }
-  }
-
-  .section-shoptop-news {
-    .lst-border {
-      margin-bottom: 20px;
-    }
-
-    .link-more {
-      display: block;
-      width: fit-content;
-      margin: 0 auto;
-    }
-
-    @include mq-pc {
-      padding: 120px 0 60px;
-
-      .news-wrap {
-        display: flex;
-        justify-content: space-between;
-        gap: 50px;
-
-        > div:nth-child(2) {
-          flex-grow: 2;
-          max-width: 650px;
+    .section {
+        @include mq-pc {
+            padding: 120px 0;
         }
-      }
-
-      .lst-border {
-        margin-top: 0px;
-        margin-bottom: 30px;
-        padding-top: 30px;
-
-        &__item {
-          margin-bottom: 30px;
-          padding-bottom: 30px;
-        }
-      }
-
-      .link-more {
-        margin-right: 0;
-      }
-    }
-  }
-
-  .section-concept {
-    &:first-child {
-      padding-top: 216px;
     }
 
-    @include mq-pc {
-      padding: 60px 0 120px;
-    }
-
-    // background-position: left -27% top 0%,
-    //                       right -10.2% top 18.25%,
-    //                       left -22% top 44%,
-    //                       right 2.2% top 64.5%;
-  }
-
-  .section-howto {
-    padding-right: 0;
-    padding-left: 0;
-    // padding: 120px 0;
-
-    .content {
-      width: 100%;
-      max-width: none;
-    }
-  }
-
-  .section-menu {
-    padding-top: 0;
-
-    @include mq-pc {
-
-      .inner--white {
-        width: calc(50% + 50vw);
-        margin-right: calc(50% - 50vw);
-
-        > * {
-          max-width: calc(1000px - 60px);
-        }
-      }
-
-      .btn-sub {
-        margin: auto;
-      }
-    }
-  }
-
-  .section-line {
-    padding-top: 0;
-
-    @include mq-pc {
-      padding-bottom: 120px;
-    }
-
-    &__h3 {
-      margin-bottom: 20px;
-      color: $c-theme;
-      font-family: $ff-shippori-mincho;
-      font-size: 20px;
-      letter-spacing: .18em;
-      text-align: center;
-    }
-
-    @include mq-pc {
-      &__h3 {
-        font-size: 30px;
-        text-align: left;
-      }
-    }
-  }
-
-  .section-instagram {
-    padding-top: 0;
-
-    .feed-insta {
-      padding: 0 15px;
-      font-family: sans-serif;
-
-      &__header {
-        margin-bottom: 10px;
-
-        a {
-          display: flex;
-          align-items: center;
-          gap: 18px;
-          color: $c-white;
-
-          .account-name {
-            order: 2;
-            font-weight: bold;
-
-            h3 {
-              font-size: 16px;
-            }
-          }
-
-          .icon {
-            order: 1;
-            width: 56px;
-            height: 56px;
-          }
-        }
-      }
-
-      &__images {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 9px;
-        margin-bottom: 20px;
-      }
-
-      &__item {
-        width: calc((100% - 9px) / 2);
-      }
-
-      &__load {
-        display: flex;
-        justify-content: center;
-        gap: 20px;
-      }
-
-      &__loadBtn {
-        background-color: $c-white;
-        padding: 12px 13px;
-        font-weight: bold;
-        color: $c-blk;
-      }
-
-      &__followBtn {
-        background-color: $c-theme;
-        padding: 12px 18px;
-
-        a {
-          display: flex;
-        }
-
-        svg {
-          width: 12px;
-          margin-right: 8px;
-        }
-
-        span {
-          color: $c-white;
-        }
-      }
-    }
-
-    @include mq-pc {
-      .feed-insta {
+    .section-mv {
+        height: calc(100vh - 90px);
         padding: 0;
+        margin-top: 90px;
 
-        &__images {
-          flex-wrap: nowrap;
-          gap: 32px;
+        .content {
+            padding: 0px 11.733vw;
+
+            @include mq-pc {
+                padding: 0 120px;
+            }
+        }
+    }
+    
+    .section-shoptop-news {
+        .lst-border {
+            margin-bottom: 20px;
         }
 
-        &__item {
-          img {
+        .link-more {
+            display: block;
+            width: fit-content;
+            margin: 0 auto;
+        }
+
+        @include mq-pc {
+            padding: 120px 0 60px;
+
+            .news-wrap {
+                display: flex;
+                justify-content: space-between;
+                gap: 50px;
+
+                > div:nth-child(2) {
+                    flex-grow: 2;
+                    max-width: 650px;
+                }
+            }
+
+            .lst-border {
+                margin-top: 0px;
+                margin-bottom: 30px;
+                padding-top: 30px;
+
+                &__item {
+                    margin-bottom: 30px;
+                    padding-bottom: 30px;
+                }
+            }
+
+            .link-more {
+                margin-right: 0;
+            }
+        }
+    }
+
+    .section-concept {
+        &:first-child {
+            padding-top: 216px;
+        }
+
+        @include mq-pc {
+            padding: 60px 0 120px;
+        }
+
+        // background-position: left -27% top 0%,
+        //                       right -10.2% top 18.25%,
+        //                       left -22% top 44%,
+        //                       right 2.2% top 64.5%;
+    }
+
+    .section-howto {
+        padding-right: 0;
+        padding-left: 0;
+        // padding: 120px 0;
+
+        .content {
             width: 100%;
             max-width: none;
-          }
         }
-      }
     }
-  }
 
-  .section-access {
-    padding-top: 0;
-    padding-bottom: 0;
+    .section-menu {
+        padding-top: 0;
 
-    @include mq-pc {
+        @include mq-pc {
 
-      .inner--white {
-        width: calc(50% + 50vw);
-        margin-left: calc(50% - 50vw);
-        padding-left: 10vw;
+            .inner--white {
+                width: calc(50% + 50vw);
+                margin-right: calc(50% - 50vw);
 
-        > * {
-          // width: 80vw;
-          max-width: calc(1000px - 60px);
-          margin-left: auto;
-          margin-right: 0;
+                > * {
+                    max-width: calc(1000px - 60px);
+                }
+            }
+
+            .btn-sub {
+                margin: auto;
+            }
         }
-      }
     }
-  }
+
+    .section-line {
+        padding-top: 0;
+
+        @include mq-pc {
+            padding-bottom: 120px;
+        }
+
+        &__h3 {
+            margin-bottom: 20px;
+            color: $c-theme;
+            font-family: $ff-shippori-mincho;
+            font-size: 20px;
+            letter-spacing: .18em;
+            text-align: center;
+        }
+
+        @include mq-pc {
+            &__h3 {
+                font-size: 30px;
+                text-align: left;
+            }
+        }
+    }
+
+    .section-instagram {
+        padding-top: 0;
+
+        .feed-insta {
+            padding: 0 15px;
+            font-family: sans-serif;
+
+            &__header {
+                margin-bottom: 10px;
+
+                a {
+                    display: flex;
+                    align-items: center;
+                    gap: 18px;
+                    color: $c-white;
+
+                    .account-name {
+                        order: 2;
+                        font-weight: bold;
+
+                        h3 {
+                            font-size: 16px;
+                        }
+                    }
+
+                    .icon {
+                        order: 1;
+                        width: 56px;
+                        height: 56px;
+                    }
+                }
+            }
+
+            &__images {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 9px;
+                margin-bottom: 20px;
+            }
+
+            &__item {
+                width: calc((100% - 9px) / 2);
+            }
+
+            &__load {
+                display: flex;
+                justify-content: center;
+                gap: 20px;
+            }
+
+            &__loadBtn {
+                background-color: $c-white;
+                padding: 12px 13px;
+                font-weight: bold;
+                color: $c-blk;
+            }
+
+            &__followBtn {
+                background-color: $c-theme;
+                padding: 12px 18px;
+
+                a {
+                    display: flex;
+                }
+
+                svg {
+                    width: 12px;
+                    margin-right: 8px;
+                }
+
+                span {
+                    color: $c-white;
+                }
+            }
+        }
+
+        @include mq-pc {
+            .feed-insta {
+                padding: 0;
+
+                &__images {
+                    flex-wrap: nowrap;
+                    gap: 32px;
+                }
+
+                &__item {
+                    img {
+                        width: 100%;
+                        max-width: none;
+                    }
+                }
+            }
+        }
+    }
+
+    .section-access {
+        padding-top: 0;
+        padding-bottom: 0;
+
+        @include mq-pc {
+
+            .inner--white {
+                width: calc(50% + 50vw);
+                margin-left: calc(50% - 50vw);
+                padding-left: 10vw;
+
+                > * {
+                    // width: 80vw;
+                    max-width: calc(1000px - 60px);
+                    margin-left: auto;
+                    margin-right: 0;
+                }
+            }
+        }
+    }
 }

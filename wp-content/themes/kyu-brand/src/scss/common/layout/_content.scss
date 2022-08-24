@@ -6,88 +6,88 @@
 */
 
 .wrap {
-	background-color: $c-blk;
-	display: flex;
-	flex-direction: column;
-	flex-wrap: wrap;
-	min-height: 100vh;
-	font-family: $ff-noto-sans;
-	font-weight: $fw-noto-normal;
+    background-color: $c-blk;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    min-height: 100vh;
+    font-family: $ff-noto-sans;
+    font-weight: $fw-noto-normal;
 }
 
 .main {
-	background-color: $c-blk;
-	box-sizing: border-box;
-	width: 100%;
-	margin: auto;
+    background-color: $c-blk;
+    box-sizing: border-box;
+    width: 100%;
+    margin: auto;
 
-	@include mq-mobile {
-		box-sizing: border-box;
-		width: 100%;
-		margin: 0 auto;
-		// padding: 20px;
-	}
+    @include mq-mobile {
+        box-sizing: border-box;
+        width: 100%;
+        margin: 0 auto;
+        // padding: 20px;
+    }
 
-	@include mq-pc {
-	}
+    @include mq-pc {
+    }
 }
 
 .section {
-	padding: 50px 15px;
-	box-sizing: border-box;
+    padding: 50px 15px;
+    box-sizing: border-box;
 
-	@include mq-pc {
-		padding: 140px 0;
-	}
+    @include mq-pc {
+        padding: 140px 0;
+    }
 }
 
 .content {
-	@include mq-tab {
-		width: 80%;
-		max-width: 1000px;
-		margin: auto;
-	}
+    @include mq-tab {
+        width: 80%;
+        max-width: 1000px;
+        margin: auto;
+    }
 }
 
 .inner {
-	$this: &;
-	width: calc(50% + 50vw);
-	margin-right: calc(50% - 50vw);
-	padding: 20px 15px 50px;
-	box-sizing: border-box;
+    $this: &;
+    width: calc(50% + 50vw);
+    margin-right: calc(50% - 50vw);
+    padding: 20px 15px 50px;
+    box-sizing: border-box;
 
-	&--white {
-		@extend #{$this};
-		background-color: $c-white;
-	}
+    &--white {
+        @extend #{$this};
+        background-color: $c-white;
+    }
 
-	&--left {
-		@extend #{$this};
-		margin-right: 0;
-		margin-left: calc(50% - 50vw);
-	}
+    &--left {
+        @extend #{$this};
+        margin-right: 0;
+        margin-left: calc(50% - 50vw);
+    }
 
-	@include mq-pc {
-		width: 100%;
-		margin: 0;
-		padding: 65px 50px;
-	}
+    @include mq-pc {
+        width: 100%;
+        margin: 0;
+        padding: 65px 50px;
+    }
 }
 
 .hero {
-	height: 168px;
-  height: 100px;
-  background-size: cover;
-  background-position: top;
+    height: 168px;
+    height: 100px;
+    background-size: cover;
+    background-position: top;
 
-	@include mq-pc {
-		width: 100%;
-		height: 270px;
-		overflow: hidden;
-		position: relative;
-		background-size: cover;
-		background-position: center;
-	}
+    @include mq-pc {
+        width: 100%;
+        height: 270px;
+        overflow: hidden;
+        position: relative;
+        background-size: cover;
+        background-position: center;
+    }
 }
 
 //

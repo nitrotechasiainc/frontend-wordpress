@@ -1,0 +1,48 @@
+// --------------------------------------------------
+$bp-sp-small: 320px;
+$bp-sp: 599px;
+$bp-tab: $bp-sp + 1px;
+$bp-pc: 900px;
+$bp-pc-l: 1080px;
+
+@mixin mq-320 {
+    @media only screen and (max-width: $bp-sp-small) {
+        @content;
+    }
+}
+
+@mixin mq-sp {
+    @media only screen and (max-width: $bp-sp) {
+        @content;
+    }
+}
+
+@mixin mq-tab {
+    @media print, screen and (min-width: $bp-tab) {
+        @content;
+    }
+}
+
+@mixin mq-mobile {
+    @media only screen and (max-width: $bp-pc - 1px) {
+        @content;
+    }
+}
+
+@mixin mq-pc {
+    @media print, screen and (min-width: $bp-pc) {
+        @content;
+    }
+}
+
+@mixin mq-pc-l {
+    @media print, screen and (min-width: $bp-pc-l) {
+        @content;
+    }
+}
+
+@mixin mq-pc-xl {
+    @media print, screen and (min-width: $bp-pc-l) {
+        @content;
+    }
+}
